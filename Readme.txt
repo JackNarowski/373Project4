@@ -13,4 +13,8 @@ Each folder also has its own readme which goes into detail about each demo imple
 
 As an over view:
 
+Visitor is an employee management system
+    In main, employees of different types are created and then can be visited by other methods that do different things,
+    In my demo the employees can be Trained or Paid
+    Visitor pattern is good for this helping the code satisfy single responsibility principle by separating the functions
 
