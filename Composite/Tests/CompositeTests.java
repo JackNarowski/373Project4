@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class CompositeTests {
     @Test
-    void TestStepCreation(){
+    void TestStep(){
         Step step = new Step("Step", 10);
         assertEquals("Step", step.name);
         assertEquals(10, step.getTime());
