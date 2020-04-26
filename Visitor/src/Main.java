@@ -23,7 +23,7 @@ public class Main {
         fullTimeEmployees.add(fullTime2);
 
 
-        //Run the check in method a few times to simulate multiple visits
+        //Run functions on employees
         Train train = new Train();
         fullTimeEmployees.forEach((employee) -> train.visit((FullTime) employee));
         partTimeEmployees.forEach((employee) -> train.visit((PartTime) employee));
