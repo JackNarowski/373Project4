@@ -3,9 +3,18 @@ import java.util.Enumeration;
 
 public class Assembly extends Component {
     private Vector components = new Vector();
+    String name;
+
+    Assembly(String name){
+        this.name = name;
+    }
 
     public void add(Component c){
         components.add(c);
+    }
+
+    public void remove(Component c){
+        components.remove(c);
     }
 
     @Override
