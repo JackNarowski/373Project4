@@ -7,10 +7,6 @@ public class Step extends Component {
         this.time = time;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public int getTime(){
         return time;
