@@ -1,4 +1,4 @@
-Observer Readme
+Visitor Readme
 
 This code is a basic implementation of the visitor pattern.
 

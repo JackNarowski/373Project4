@@ -1,11 +1,11 @@
 import java.util.Vector;
 import java.util.Enumeration;
 
-public class Assembly extends Component {
+public class Composite extends Component {
     private Vector components = new Vector();
     String name;
 
-    Assembly(String name){
+    Composite(String name){
         this.name = name;
     }
 

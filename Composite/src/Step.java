@@ -1,8 +1,8 @@
-public class Part extends Component {
+public class Step extends Component {
     public int time;
     public String name;
 
-    Part(String name,int time){
+    Step(String name, int time){
         this.name = name;
         this.time = time;
     }

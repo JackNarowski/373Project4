@@ -1,30 +1,28 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args){
         //Gonna pretend to be launching a rocket ship as the operation
 
         //First section "Pre-steps"
-        Part calculation = new Part("Calculation", 10);
-        Part angle = new Part("Angle", 15);
-        Assembly presteps = new Assembly("presteps");
+        Step calculation = new Step("Calculation", 10);
+        Step angle = new Step("Angle", 15);
+        Composite presteps = new Composite("presteps");
         presteps.add(angle);
         presteps.add(calculation);
 
         //Second section "Launch"
-        Part ignition = new Part("ignition", 17);
-        Part burn = new Part("Burn", 30);
-        Assembly launch = new Assembly("launch");
+        Step ignition = new Step("ignition", 17);
+        Step burn = new Step("Burn", 30);
+        Composite launch = new Composite("launch");
         launch.add(ignition);
         launch.add(burn);
 
         //Third section "Flight"
-        Part troposphere = new Part("Troposphere", 50);
-        Part stratosphere = new Part("Stratosphere", 40);
-        Part mesosphere = new Part("Mesosphere", 30);
-        Part thermosphere = new Part("Thermosphere", 20);
-        Part exosphere = new Part("Exosphere", 10);
-        Assembly flight = new Assembly("Flight");
+        Step troposphere = new Step("Troposphere", 50);
+        Step stratosphere = new Step("Stratosphere", 40);
+        Step mesosphere = new Step("Mesosphere", 30);
+        Step thermosphere = new Step("Thermosphere", 20);
+        Step exosphere = new Step("Exosphere", 10);
+        Composite flight = new Composite("Flight");
         flight.add(troposphere);
         flight.add(stratosphere);
         flight.add(mesosphere);
@@ -32,7 +30,7 @@ public class Main {
         flight.add(exosphere);
 
         //Finally one last component that contains it all
-        Assembly spaceflight = new Assembly("Space Flight");
+        Composite spaceflight = new Composite("Space Flight");
         spaceflight.add(presteps);
         spaceflight.add(launch);
         spaceflight.add(flight);
